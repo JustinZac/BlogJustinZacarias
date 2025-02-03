@@ -1,0 +1,216 @@
+:root {
+    --primary-color: #2a2a2a;
+    --secondary-color: #1a1a1a;
+    --accent-color: #00ff88;
+    --light-color: #f5f5f5;
+    --text-color: #e6e6e6;
+    --background-color: #121212;
+}
+
+/* Fondo general */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 2rem 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-logo h1 {
+    font-size: 2rem; 
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.header-logo a {
+    text-decoration: none;
+    color: var(--light-color);
+    transition: color 0.3s ease;
+}
+
+.header-logo a:hover {
+    color: var(--accent-color);
+}
+
+/* Navegación */
+.nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-link {
+    color: var(--light-color);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent-color);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Contenido principal */
+.main {
+    margin: 10.5rem auto 3rem;
+    max-width: 1200px;
+    padding: 2rem;
+}
+
+.featured-post {
+    background: var(--primary-color);
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+}
+
+.post-title {
+    color: var(--light-color);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.post-content {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--accent-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 255, 136, 0.5);
+}
+
+/* Post recientes */
+.recent-post {
+    background: var(--secondary-color);
+    padding: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.post {
+    background: var(--primary-color);
+    padding: 2rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.post-date {
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-bottom: 1rem;
+}
+
+.post-title {
+    color: var(--light-color);
+    margin-bottom: 1rem;
+}
+
+.btn-post {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.btn-post:hover {
+    text-decoration: underline;
+}
+
+/* Pie de página */
+.footer {
+    background: var(--secondary-color);
+    padding: 3rem 2rem;
+    text-align: center;
+    color: var(--text-color);
+    border-top: 2px solid var(--accent-color);
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-link {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.footer-nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-text {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
